@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Nova | About the Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+        .interactive-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .interactive-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+    <!-- Header & Navigation Bar -->
+    <header class="bg-indigo-950 text-white p-6 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-[1600px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="bg-sky-500 p-2 rounded-lg">
+                    <i data-lucide="plane" class="h-6 w-6 text-white"></i>
+                </div>
+                <h1 class="font-bold text-2xl tracking-wide">STAR NOVA</h1>
+                <span class="text-indigo-300 hidden sm:block">| Company Profile</span>
+            </div>
+            <a href="StarNova_SMS_Manual.html" class="bg-sky-600 hover:bg-sky-700 transition-colors text-white font-medium py-2 px-4 rounded-xl flex items-center gap-2 shadow-md">
+                <i data-lucide="layout-dashboard" class="h-5 w-5"></i>
+                Back to SMS Manual
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-[1000px] mx-auto p-6 lg:p-12 space-y-12">
+
+        <div class="text-center pt-8 pb-4 border-b border-slate-200">
+            <h2 class="text-5xl font-extrabold text-slate-900 tracking-tight mb-3">About Star Nova</h2>
+            <p class="text-xl text-slate-500">The foundation of our operations: Mission, Vision, and Values.</p>
+        </div>
+
+        <!-- Mission Card -->
+        <div class="interactive-card bg-white p-8 lg:p-12 rounded-3xl shadow-xl border border-indigo-100 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-105"></div>
+            <h3 class="text-3xl font-bold text-slate-800 mb-6 flex items-center gap-4 relative z-10">
+                <div class="bg-indigo-600 p-3 rounded-xl text-white">
+                    <i data-lucide="target" class="h-6 w-6"></i>
+                </div>
+                Our Mission
+            </h3>
+            <p class="text-xl text-slate-600 leading-relaxed relative z-10 border-l-4 border-indigo-300 pl-4 py-2">
+                To connect the world with safety, efficiency, and exceptional service, ensuring every journey is a promise kept.
+            </p>
+        </div>
+
+        <!-- Vision Card -->
+        <div class="interactive-card bg-white p-8 lg:p-12 rounded-3xl shadow-xl border border-sky-100 relative overflow-hidden group">
+            <div class="absolute bottom-0 left-0 w-32 h-32 bg-sky-50 rounded-tr-full -ml-8 -mb-8 transition-transform group-hover:scale-105"></div>
+            <h3 class="text-3xl font-bold text-slate-800 mb-6 flex items-center gap-4 relative z-10">
+                <div class="bg-sky-600 p-3 rounded-xl text-white">
+                    <i data-lucide="eye" class="h-6 w-6"></i>
+                </div>
+                Our Vision
+            </h3>
+            <p class="text-xl text-slate-600 leading-relaxed relative z-10 border-l-4 border-sky-300 pl-4 py-2">
+                To be the leading airline recognized globally for our unwavering commitment to safety excellence and innovation.
+            </p>
+        </div>
+
+        <!-- Core Values Section -->
+        <div class="pt-6">
+            <h3 class="text-3xl font-bold text-slate-800 mb-8 text-center">Core Values</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="interactive-card bg-white p-6 rounded-2xl shadow-md border border-slate-200 text-center hover:bg-rose-50/50">
+                    <div class="w-16 h-16 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="shield-check" class="h-8 w-8"></i>
+                    </div>
+                    <h4 class="font-bold text-xl text-slate-800 mb-2">1. Safety First</h4>
+                    <p class="text-sm text-slate-500">Prioritizing the well-being of passengers and crew above all else.</p>
+                </div>
+
+                <div class="interactive-card bg-white p-6 rounded-2xl shadow-md border border-slate-200 text-center hover:bg-emerald-50/50">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="hand-metal" class="h-8 w-8"></i>
+                    </div>
+                    <h4 class="font-bold text-xl text-slate-800 mb-2">2. Integrity</h4>
+                    <p class="text-sm text-slate-500">Operating with transparency, honesty, and accountability in every decision.</p>
+                </div>
+
+                <div class="interactive-card bg-white p-6 rounded-2xl shadow-md border border-slate-200 text-center hover:bg-amber-50/50">
+                    <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="trending-up" class="h-8 w-8"></i>
+                    </div>
+                    <h4 class="font-bold text-xl text-slate-800 mb-2">3. Excellence</h4>
+                    <p class="text-sm text-slate-500">Striving for continuous improvement in all operational and customer service areas.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 mt-12 text-center text-slate-400 text-sm py-8">
+        <p>&copy; 2025 Star Nova Airlines. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
